@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <h1>超级大黄网</h1>
   </div>
 </template>
+<script>
+export default {
+  data: function(){
+    return {
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
+  },
+  mounted(){
+    
   }
+}
+</script>
+<style scoped>
+#app{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-size: 10rem;
+  color: #ffc006;
+  line-height: 100vh;
+  text-align: center;
 }
 </style>
